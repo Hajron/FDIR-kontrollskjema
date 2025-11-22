@@ -1,3 +1,4 @@
+-= UNDER UTVIKLING =-
 # Kontrollskjema – Next.js + Supabase (protected + bearer)
 
 ## 🚀 Rask start (første gang)
