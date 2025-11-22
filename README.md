@@ -21,17 +21,21 @@ npm install
 Dette installerer alle pakker definert i `package.json`. Tar 1-2 minutter.
 
 ### 3. Sett opp miljøvariabler
-Lag en `.env.local` fil i rotmappen med disse verdiene:
-```bash
-NEXT_PUBLIC_SUPABASE_URL=https://pzwlbimbcfnqceskojwn.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
-```
+Lag en `.env.local` fil i rotmappen. Hent verdiene fra Supabase:
 
 **Hvor får jeg disse verdiene?**
 1. Logg inn på [Supabase Dashboard](https://app.supabase.com)
 2. Velg ditt prosjekt
 3. Gå til **Settings → API**
 4. Kopier `Project URL` og `anon public key`
+
+**Fyll inn i `.env.local`:**
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your_project_url_here
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key_here
+```
+
+⚠️ **VIKTIG**: Lagre `.env.local` lokalt og COMMIT den ALDRI til Git!
 
 ### 4. Database-oppsett (bare første gang)
 I Supabase Dashboard, gå til **SQL Editor** og kjør disse SQL-filene i rekkefølgen:
